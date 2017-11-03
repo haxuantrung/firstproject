@@ -1,0 +1,341 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: '';
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+
+.header__icon {
+	position: relative;
+	background-color: #c7c8ca;
+	height: 30px;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+}
+
+.icon__inline-block {
+	position: relative;
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	padding: 3px 5px;
+	color: #c7c8ca;
+	background-color: #363636;
+	margin: 4px 4px 4px 0;
+}
+
+.lang__en {
+	border-right: 2px solid #c7c8ca;
+	padding-right: 5px;
+	color: #fce9c3;
+}
+
+.header__nav {
+	background-color: #0e7073;
+}
+
+.header__nav li {
+	
+}
+
+.logo {
+	float: left;
+}
+
+
+
+.header__nav .active {
+	background-color: #0b4648;
+}
+
+.main__slide {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.slide__bg img{
+	width: 100%;
+	display: none;
+}
+
+.slide__bg .active {
+	display: block;
+}
+
+.slide__circles {
+	font-size: 8px;
+	color: #58585a;
+	text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
+.fa--white {
+	color: #fff;
+}
+
+.fa-chevron-left {
+	color: #ebebeb;
+	position: absolute;
+	left: 5px;
+	top: 40%;
+	cursor: pointer;
+}
+
+.main__slide .fa-chevron-right {
+	color: #ebebeb;
+	position: absolute;
+	right: 5px;
+	top: 40%;
+	cursor: pointer;
+}
+
+.main__event {
+	width: 100%;
+	background-color: #0e7073;
+	margin-top: -13px;
+}
+
+.event__title {
+	padding: 5px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+
+.event__image {
+	position: relative;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.image__bg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.image__sub-title {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: #fff;
+	z-index: 1;
+}
+
+.image__footer {
+	width: 100%;
+	height: 35px;
+	background-color: #58585a;
+    position: absolute;
+    bottom: 2px;
+	opacity: 0.8;    
+}
+
+.event__article {
+	width: 100%;
+	float: left;
+	padding: 0 10px 10px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.read-more {
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+	display: block;
+}
+
+.main__articles {
+	width: 100%;
+	padding: 15px 10px;
+}
+
+.articles__section {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.section__image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.section__title {
+	display: inline-block;
+	color: #b52a51;
+	font-size: 18px;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.articles__section .read-more {
+	color: #b52a51;
+	font-size: 14px;
+	margin: 10px 0;
+	font-weight: lighter;
+}
+
+footer {
+	background-color: #c7c8ca;
+}
+
+.footer__title {
+	color: #b52a51;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer__detail {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #000;
+}
+
+.footer__copyright {
+	float: left;
+	color: #585858;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.nav__block--big {
+		padding: 10px 30px;
+	}
+
+	.nav__block--small {
+		padding: 15px;
+	}
+
+	.fa-chevron-left {
+		font-size: 30px !important;
+	}
+
+	.main__slide .fa-chevron-right {
+		font-size: 30px !important;
+	}
+
+	.slide__circles {
+		font-size: 20px;
+		bottom: 30px;
+	}
+
+	.fa-circle {
+		margin: 0 5px;
+	}
+
+	.main__event {
+		margin-top: -27px;
+		padding: 0 20px;
+	}
+
+	.image__bg {
+		height: 300px;
+	}
+
+	.event__title {
+		padding: 20px 0;
+		text-align: left;
+		font-size: 28px;
+	}
+
+	.event__image {
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+
+	.event__article {
+		max-width: 278px;
+		font-size: 12px;
+		margin-top: -15px;
+		padding: 0;
+		padding-left: 20px;
+	}
+
+	.image__footer {
+		height: 40px;
+	}
+
+	.image__sub-title {
+		font-size: 20px;
+		bottom: 10px;
+		left: 10px;
+	}
+
+	.main__articles {
+		padding: 15px 5px;
+	}
+
+	.articles__section {
+		width: 50%;
+		padding: 5px;
+	}
+
+	.section__image {
+		width: 369px;
+		height: 246px;
+	}
+
+	.section__detail {
+		max-width: 369px;
+	}
+
+	.footer__detail {
+		width: 14.285%;
+		border: none;
+		text-align: left;
+		padding: 20px 10px 0;
+	}	
+
+	.footer__title {
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.footer__detail a {
+		font-size: 10px;
+	}
+
+	.footer__copyright {
+		text-align: right;
+	}
+
+	.icons {
+		width: 20px;
+		height: 20px;
+	}
+}
+
